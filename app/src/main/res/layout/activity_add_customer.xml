@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_customer">
+
+    <include layout="@layout/actionbar_add_customer"
+        android:id="@+id/actionbar"/>
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:drawableLeft="@drawable/person"
+        android:padding="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="Enter Mobile Number"
+        android:drawableLeft="@drawable/phone"
+        android:padding="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_number"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/email"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_email"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="Enter City"
+        android:drawableLeft="@drawable/city"
+        android:padding="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_city"
+        android:layout_marginTop="30dp"
+        android:text="Cancel"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_city"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:layout_marginLeft="250dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:id="@+id/fbBtn"
+        android:src="@drawable/person"/>
+
+
+
+</RelativeLayout>

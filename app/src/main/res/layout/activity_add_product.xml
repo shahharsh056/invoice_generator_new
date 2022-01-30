@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_product">
+
+    <include layout="@layout/actionbar_add_product"
+        android:id="@+id/actionbar"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="Enter Product Name"
+        android:drawableLeft="@drawable/product"
+        android:padding="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <EditText
+        android:id="@+id/et_companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text_border"
+        android:gravity="center"
+        android:hint="Enter Company Name"
+        android:drawableLeft="@drawable/company"
+        android:padding="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_companyName"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableLeft="@drawable/invoice"
+        android:gravity="center"
+        android:hint="Enter Price"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_price"
+        android:layout_marginTop="30dp"
+        android:text="Cancel"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_price"
+        android:layout_marginTop="30dp"
+        android:text="Add"
+        android:layout_marginLeft="250dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:id="@+id/fbBtn"
+        android:src="@drawable/product"/>
+
+</RelativeLayout>
